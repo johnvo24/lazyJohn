@@ -1,21 +1,21 @@
 @echo off
 
 rem > Check whether the argument exists or not
-if "%3"=="" (
+if %3=="" (
 	echo Error: Missing arg 3!
 	goto End
 )
-if "%2"=="" (
+if %2=="" (
 	echo Error: Missing arg 2!
 	goto End
 )
-if "%1"=="" (
+if %1=="" (
 	echo Error: Missing arg 1!
 	goto End
 )
 
 rem > Git push commands
-git add .
+git add .	
 git commit -m "%3"
 rem >> If this is the first time connecting to github repository
 if "%3"=="-new" (
