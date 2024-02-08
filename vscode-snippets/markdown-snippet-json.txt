@@ -1,0 +1,12 @@
+{
+	"Print to console": {
+		"prefix": "details",
+		"body": [
+			"<details>",
+			"	<summary><h3>title</h3></summary>",
+			"	",
+			"</details>",
+		],
+		"description": "details tag"
+	}
+}
