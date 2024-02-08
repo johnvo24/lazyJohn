@@ -13,12 +13,15 @@ if %1=="" (
 	echo Error: Missing arg 1!
 	goto End
 )
+echo %1
+echo %2
+echo %3
 
 rem > Git push commands
 git add .	
-git commit -m "%3"
+git commit -m %3
 rem >> If this is the first time connecting to github repository
-if "%3"=="-new" (
+if %3=="-new" (
 	git push -u %1 %2
 )
 git push %1 %2
