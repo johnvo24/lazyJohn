@@ -13,9 +13,6 @@ if %1=="" (
 	echo Error: Missing arg 1!
 	goto End
 )
-echo %1
-echo %2
-echo %3
 
 rem > Git push commands
 git add .	
