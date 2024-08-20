@@ -1,12 +1,56 @@
 {
-	"Print to console": {
+	// Place your snippets for markdown here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"Title 0": {
+		"prefix": "t0",
+		"body": [
+			"<!-- TITLE 0 --> <h2>$1</h2>"
+		],
+	},
+	"Title 1": {
+		"prefix": "t1",
+		"body": [
+			"<!-- TITLE 1 --> <h3>$1</h3>"
+		],
+	},
+	"Title 2": {
+		"prefix": "t2",
+		"body": [
+			"<!-- TITLE 2 --> <h4>$1</h4>"
+		],
+	},
+	"Details Dropdown": {
 		"prefix": "details",
 		"body": [
 			"<details>",
-			"	<summary><h3>title</h3></summary>",
-			"	",
+			"\t<summary>$1</summary>",
+			"\t$2",
 			"</details>",
 		],
-		"description": "details tag"
-	}
+	},
+	"List": {
+		"prefix": "list",
+		"body": [
+			"<ul>",
+			"\t<li>$1</li>",
+			"\t<li>$2</li>",
+			"\t<li>$3</li>",
+			"</ul>",
+		],
+	},
+	"Image": {
+		"prefix": "img",
+		"body": [
+			"<img src=\"/images/$1\" alt=\"image\" width=\"500\"/>",
+		],
+	},
+	"Link": {
+		"prefix": "link",
+		"body": [
+			"<a href=\"$1\">Reference</a>",
+		],
+	},
 }
