@@ -1,7 +1,7 @@
 @echo off
 
-if %1=="John updated" (
-	gpush origin master %1
+if %1==. (
+	gpush origin master "John updated"
 	goto End
 )
 rem > Check whether the argument exists or not
