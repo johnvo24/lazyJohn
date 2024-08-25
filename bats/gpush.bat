@@ -1,7 +1,7 @@
 @echo off
 
 if %1==. (
-	gpush origin master "John updated"
+	gpush origin master "John updatedd"
 	goto End
 )
 rem > Check whether the argument exists or not
