@@ -1,5 +1,9 @@
 @echo off
 
+if %1=="John updated" (
+	gpush origin master %1
+	goto End
+)
 rem > Check whether the argument exists or not
 if %3=="" (
 	echo Error: Missing arg 3!
