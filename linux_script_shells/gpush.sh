@@ -5,7 +5,7 @@ if [ -z "$1" ]; then
     exit 1
 fi
 if [ "$1" == . ]; then
-    gpush origin master "John updated"
+    gpush.sh origin master "John updated"
     exit 0
 fi
 if [ -z "$2" ]; then
