@@ -4,7 +4,7 @@ if [ -z "$1" ]; then
     echo "Error: Missing arg 1!"
     exit 1
 fi
-if [ "$1" == "." ]; then
+if [ "$1" == . ]; then
     gpush origin master "John updated"
     exit 0
 fi
