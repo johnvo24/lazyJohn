@@ -8,9 +8,9 @@
 ## linux
 1. Clone this
 2. Add linux_script_shells folder to PATH: file ~/.bashrc
->    if ! [[ "$PATH" =~ "$HOME/jv/lazyJohn/linux_script_shells" ]]; then
->       PATH="$HOME/jv/lazyJohn/linux_script_shells:$PATH"
->    fi
+>    if ! [[ "$PATH" =~ "$HOME/jv/lazyJohn/linux_script_shells" ]]; then </br>
+>       PATH="$HOME/jv/lazyJohn/linux_script_shells:$PATH" </br>
+>    fi </br>
 >    export PATH
 3. run: chmod +x ~/jv/lazyJohn/linux_script_shells/*.sh
 
