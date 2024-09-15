@@ -1,0 +1,50 @@
+{
+	// Place your snippets for typescriptreact here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"export default function": {
+		"prefix": "xdf",
+		"body": [
+			"export default function ${1:functionName}() {",
+			"\treturn ($2)",
+			"}",
+		],
+		"description": ""
+	},
+	//Components
+	"newcomponent0": {
+		"prefix": "comp0",
+		"body": [    
+			"\n\nconst ${1:ComponentName} = () => {",
+			"\treturn (",
+      "\t\t$2",
+      "\t);",
+      "}",
+			"\n\nexport default $1",
+		],
+		"description": ""
+	},
+	"newcomponent1": {
+		"prefix": "comp1",
+		"body": [    
+			"\n\nconst ${1:ComponentName} = ({ children }: Readonly<{ children: React.ReactNode; }>) => {",
+			"\treturn (",
+      "\t\t<div>",
+      "\t\t\t$2{children}",
+      "\t\t</div>",
+      "\t);",
+      "}",
+			"\n\nexport default $1",
+		],
+		"description": ""
+	},
+	"reacticons": {
+		"prefix": "icon",
+		"body": [      
+			"<$1 size={22} className=\"text-[var(--color-text-default)] stroke-[1.5]\"/>"
+		],
+		"description": ""
+	},
+}

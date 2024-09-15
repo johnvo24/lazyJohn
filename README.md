@@ -13,6 +13,21 @@
 >    fi </br>
 >    export PATH
 3. run: chmod +x ~/jv/lazyJohn/linux_script_shells/*.sh
+<details>
+  <summary><!-- TITLE 2 --> <h4>Install Nvidia Drivers</h4></summary>
+  <ul>
+    <li>Disable boot secure in BIOS</li>
+    <li>Check with: neowofetch</li>
+    <li>Dependence packages: sudo dnf install kmodtool akmods mokutil openssl</li>
+    <li>Generate sign: sudo kmodgenca -a</li>
+    <li>Import: sudo mokutil --import /etc/pki/akmods/certs/public_key.der</li>
+    <li>systemctl reboot > Enroll MOK > key0 > Yes > Reboot</li>
+    <li>sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda</li>
+    <li>systemctl reboot</li>
+    <li>Check with: lshw -class display</li>
+    <li>Check with: nvidia-smi</li>
+  </ul>
+</details>
 
 ## github configuration
 1. Create ssh-key

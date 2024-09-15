@@ -41,6 +41,12 @@
 			"</ul>",
 		],
 	},
+	"List item": {
+		"prefix": "li",
+		"body": [
+			"<li>$1</li>",
+		],
+	},
 	"Image": {
 		"prefix": "img",
 		"body": [
